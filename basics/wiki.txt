@@ -1,0 +1,11 @@
+print('Wikipedia Search')
+search = input('Enter what to searched:')
+print('1.Short Information\n2.Summary\n3.Choose number of lines of information you which to read')
+ch = input('Enter Your Choice:')
+if ch == 1:
+    print(wikipedia.summary(search,sentences = 3))
+elif ch == 2:
+    print(wikipedia.summary(search))
+elif ch == 3:
+    lines = input('Enter number of lines:')
+    print(wikipedia.summary(search,sentences = lines)) 
